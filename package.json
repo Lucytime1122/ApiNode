@@ -11,8 +11,8 @@
   "version": "1.0.0",
   "main": "aplicacionweb/server.js",
   "scripts": {
-    "start": "node apliccacionweb/server.js",
-    "dev": "nodemon apliccacionweb/server.js",
+    "start": "node aplicacionweb/server.js",
+    "dev": "nodemon aplicacionweb/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
