@@ -1,5 +1,3 @@
-const express = require('express');
-
 function sumar() {
     const numA = parseFloat(document.getElementById('numero1').value);
     const numB = parseFloat(document.getElementById('numero2').value);
