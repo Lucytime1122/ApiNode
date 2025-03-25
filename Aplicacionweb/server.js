@@ -1,15 +1,19 @@
 const express = require('express');
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware para servir archivos estáticos
-app.use(express.static(path.join(__dirname, '../aplicacionweb')));
+// Middleware para registrar las solicitudes
+app.use(morgan('dev'));
 
-// Rutas (puedes agregar tus rutas aquí)
+// Middleware para servir archivos estáticos
+app.use(express.static(path.join(__dirname)));
+
+// Ruta para servir el index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../aplicacionweb/index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Iniciar el servidor

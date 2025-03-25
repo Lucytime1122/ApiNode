@@ -9,9 +9,10 @@
   },
   "name": "apinode",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "aplicacionweb/server.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node apliccacionweb/server.js",
+    "dev": "nodemon apliccacionweb/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
