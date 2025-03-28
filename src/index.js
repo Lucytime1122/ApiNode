@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const cors = require('cors');
 const morgan = require('morgan');
 
 //Configuración del servidor en el puerto 3000
@@ -13,14 +13,16 @@ app.set('json spaces', 2);
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 
 //Nuestro primer Web Service  //A ESTAS RUTAS SE CONOCEN COMO END POINT
 app.get('/', (req, res) => {
     res.json(
         {
-            "Title": "Hola mundo, my name is Lucia"
+            "mensaje": "Mi primer api"
             // "mensaje": "Hola, esta es mi primer Api"
-        });
+        }
+    );
 });
 
 //Endpoint para sumar dos números

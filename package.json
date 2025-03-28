@@ -3,20 +3,23 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "morgan": "^1.10.0",
-    "save": "^2.9.0"
+    "save": "^2.9.0",
+    "node": "^18.20.8"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
   "name": "apinode",
   "version": "1.0.0",
-  "main": "aplicacionweb/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node /server.js",
+    "start": "node aplicacionweb/server.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Lucia",
   "license": "ISC",
+  "type": "commonjs",
   "description": ""
 }
