@@ -9,7 +9,7 @@ function sumar() {
         return;
     }
     //Llamar a la Api
-    fetch('https://sumaapi.onrender.com', { ///reemplaza con lla Url de tu API si es diferente
+    fetch('https://sumaapi.onrender.com/sumar', { ///reemplaza con lla Url de tu API si es diferente
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
