@@ -20,9 +20,8 @@ app.get('/', (req, res) => {
         {
             "Title": "Hola mundo, my name is Lucia"
             // "mensaje": "Hola, esta es mi primer Api"
-        }
-    );
-})
+        });
+});
 
 //Endpoint para sumar dos números
 app.post('/sumar', (req, res) => {   //http://localhost/sumar
